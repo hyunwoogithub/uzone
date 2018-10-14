@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<style>
+
+@font-face {
+	font-family: 'NanumGothic';
+	src: url(../Downloads/NanumFont_TTF_ALL/NanumGothic.ttf);
+}
+body {
+	width: 740px;
+	border: 1px solid gray;
+	padding: 10px;
+	height: 1150px;
+	border-radius: 3px;
+	font-family: NanumGothic;
+}
+li {
+	list-style: none;
+}
+* {
+	margin-top: 0px;
+	padding: 0px;
+}
+.header {
+	margin-right : 10px;
+	float : right;
+}
+.l {
+	margin-right : 10px;
+	float : right;
+	font-size : 8px;
+	margin-top: 3px;
+}
+header {
+	margin-top: 7px;
+	border-bottom: 1px dashed gray;
+}
+.title {
+	display : inline;
+	font-size: 20px;
+}
+.row:before, .row:after {
+	content: "";
+	display : table;
+	margin: 0px;
+	padding: 0px;
+}
+.row :after {
+	clear : both;
+}
+.door{
+	background-image : url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
+	background-size: auto;
+	padding: 5px;
+	height: 220px;
+}
+.first {
+	width: 480px;
+	float: left;
+	margin: 5px 5px 20px 3px;
+	height: 500px;
+	padding-right: 5px;
+	border-right: 1px dashed gray;
+	
+}
+
+.second {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	width: 235px;
+	float: left;
+	height: 500px;
+}
+
+.first-table {
+	border-top: solid 2px gray;
+	border-bottom: solid 2px gray;
+	height: 50px;
+	width: 480px;
+	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
+}
+
+.first-line {
+	width: 240px;
+	float: left;
+}
+
+.info {
+	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
+	height: 100px;
+}
+
+.join {
+	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
+	height: 100px;
+}
+
+.hello {
+	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
+	height: 100px;
+}
+
+.now {
+	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
+	height: 100px;
+}
+.notice-text{
+	text-align: left;
+	font-size: 5px;
+}
+.notice-title{
+	font-size: 22px;
+	display: inline;
+}
+.must {
+	background-image: url(https://ssl.pstatic.net/cafechat.phinf/MjAxODEwMTRfMTcy/MDAxNTM5NTE2MTE3NDI3._KBbM8adovQvWVBVzmVCVIV-Ac9zSBFS7klcLFU4aU0g.kx9YV_fujWBbyjgC9SIWdp9HdxLJIzMOvSHUBWSCfBEg.PNG.123qkwm/must.png);
+	height: 200px;
+	margin-bottom: 5px;
+}
+.must-notice-text {
+	padding-top: 95px; 
+	padding-left: 9px;
+	font-size: 7px;
+	font-weight: lighter;
+	color: whitesmoke;
+	float: left;
+}
+.important {
+	background-color: white;
+	height: 90px;
+	margin-bottom: 5px;
+}
+.important-line{
+	margin: 5px 0px 10px 0px;
+	height: 2px;
+	background-color: goldenrod;
+}
+.yellow{
+	color: goldenrod;
+}
+.important-more{
+	border: 2px goldenrod solid;
+	border-radius: 40%;
+	text-align: center;
+	color: goldenrod;
+	display: inline;
+	margin: 5px 0px 0px 30px;
+	padding: 2px 5px;
+	font-size: 10px;
+}
+.normal {
+	background-color: white;
+	height: 90px;
+	margin-bottom: 5px;
+}
+.normal-line{
+	margin: 5px 0px 10px 0px;
+	height: 2px;
+	background-color: springgreen;
+}
+.green{
+	color: springgreen;
+}
+.normal-more{
+	border: 2px springgreen solid;
+	border-radius: 40%;
+	text-align: center;
+	color: springgreen;
+	display: inline;
+	margin: 5px 0px 0px 30px;
+	padding: 2px 5px;
+	font-size: 10px;
+}
+.hashtag {
+	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
+	height: 80px;
+}
+
+.third {
+	width: 500px;
+	float: left;
+	margin-left: 5px;
+	padding-left: 10px;
+	height: 490px;
+	border-bottom: 1px dashed black;
+}
+
+.fourth {
+	width: 220px;
+	float: left;
+	height: 490px;
+	border-bottom: 1px dashed black;
+}
+.bottom-ul{
+	margin-right: 10px;
+}
+.bottom-nav {
+	padding-left: 20px;
+}
+.bottom-header {
+	margin-right : 10px;
+	font-size : 15px;
+	float : right;
+	background-color: aquamarine;
+	padding: 2px;
+}
+.bottom-title {
+	display : inline;
+	font-size: 15px;
+}
+.selection {
+	padding: 2px;
+	color: aquamarine;
+	border: 2px solid aquamarine;
+	border-radius: 5px;
+}
+.video {
+	width: 490px;
+	height: 230px;
+}
+
+.second-line {
+	width: 250px;
+	float: left;
+}
+.word {
+	height: 230px;
+}
+.box {
+	background-color: aqua;
+	height: 110px;
+	margin: 10px 10px 0px 0px;
+}
+.fifth-box {
+	background-color: aqua;
+	height: 110px;
+	margin: 0px 10px 0px 0px;
+}
+.small-box {
+	background-color: aqua;
+	height: 110px;
+	margin: 10px 10px 0px 0px;
+}
+.big {
+	padding-top: 10px;
+	font-size: 25px;
+	font-weight: bold;
+}
+.small {
+	font-size: 15px;
+}
+.bold {
+	font-weight: bold;
+}
+.footer-text {
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.footer-logo {
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 150px;
+	height: 50px;
+}
+.fa-check-square{
+	margin-right: 5px;
+}
+.fa-list-ul{
+	margin-right: 5px;
+}
+	
+</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li class="title"><strong>UZONE</strong></li>
+				<li class="header">이용문의</li>
+				<li class="l">l</li>
+				<li class="header">CI</li>
+				<li class="l">l</li>
+				<li class="header">1:1문의</li>
+				<li class="l">l</li>
+				<li class="header">연합문의</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="row first">
+		<div class="col">
+			<div class="door">
+				<p>아이즈원 480px*220px</p>
+			</div>
+		</div>
+		<div class="col first-table">480px*50px</div>
+		<div class="col">
+			<div class="row">
+				<div class="col first-line">
+					<div class="info">
+						<p>카페 이용안내 240px*100px</p>
+					</div>
+				</div>
+				<div class="col first-line">
+					<div class="join">
+						<p>가입하기 240px*100px</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col first-line">
+					<div class="hello">
+						<p>가입인사 작성 240px*100px</p>
+					</div>
+				</div>
+				<div class="col first-line">
+					<div class="now">
+						<p>지금은 ㅇㅇ시 240px*100px</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row second">
+		<div class="col">
+			<div class="must">
+				<p class="must-notice-text">필독 공지사항<br><br>필독 공지사항<br><br>필독 공지사항</p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="important">
+				<p class="notice-title"><span class="yellow bold">중요</span> 공지사항</p>
+				<div class="important-more">더보기</div>
+				<div class="important-line"></div>
+				<p class="notice-text">중요 공지사항</p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="normal">
+				<p class="notice-title"><span class="green bold">일반</span> 공지사항</p>
+				<div class="normal-more">더보기</div>
+				<div class="normal-line"></div>
+				<p class="notice-text">일반 공지사항</p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="hashtag">
+				<p>hashtag</p>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-nav">
+		<ul class="bottom-ul">
+			<li class="bottom-title selection">UZONE SELECTION</li>
+			<li class="bottom-title">NO.1</li>
+			<li class="bottom-header"><i class="fas fa-list-ul"></i>셀렉션 목록</li>
+			<li class="bottom-header"><i class="fas fa-check-square"></i>게시글 추천</li>
+		</ul>
+	</div>
+	<div class="row third">
+		<div class="col">
+			<div class="video">
+				<iframe src="https://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=974EB6B70BC45E7ED1C5285572F2E8ADBC70&outKey=V125e60422e7cb665d572528e2fcba8005b173fa6d03a63502ca8528e2fcba8005b17&controlBarMovable=true&jsCallable=true&isAutoPlay=true&skinName=tvcast_white" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" WIDTH="490px" HEIGHT="230px" allow="" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="col">
+			<div class="row">
+				<div class="col second-line">
+					<div class="box">
+						<p class="big">first box</p>
+						<p class="small">first box<strong> bold</strong></p>
+					</div>
+				</div>
+				<div class="col second-line">
+					<div class="box">
+						<p class="big">second box</p>
+						<p class="small">second box<strong> bold</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="row">
+				<div class="col second-line">
+					<div class="box">
+						<p class="big">third box</p>
+						<p class="small">third box<strong> bold</strong></p>
+					</div>
+				</div>
+				<div class="col second-line">
+					<div class="box">
+						<p class="big">fourth box</p>
+						<p class="small">fourth box<strong> bold</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row fourth">
+		<div class="col">
+			<div class="fifth-box">
+				<p class="big">fifth box</p>
+				<p class="small">fifth box<strong> bold</strong></p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="small-box">
+				<p class="big">sixth box</p>
+				<p class="small">sixth box<strong> bold</strong></p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="small-box">
+				<p class="big">seventh box</p>
+				<p class="small">seventh box<strong> bold</strong></p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="small-box">
+				<p class="big">eighth box</p>
+				<p class="small">eighth box<strong> bold</strong></p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<img src="naco4.jpeg" alt="logo" class="footer-logo">
+		<p class="footer-text">copy<br>right</p>
+	</footer>
+</body>
+</html>
