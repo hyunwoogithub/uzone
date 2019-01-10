@@ -3,430 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <title>test</title>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-<style>
-
-@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
-body {
-	width: 740px;
-	border: 1px solid gray;
-	padding: 10px;
-	height: 1150px;
-	border-radius: 3px;
-	font-family: 'Nanum Gothic';
-}
-li {
-	list-style: none;
-}
-* {
-	margin-top: 0px;
-	padding: 0px;
-}
-.header {
-	margin-right : 10px;
-	float : right;
-}
-.l {
-	margin-right : 10px;
-	float : right;
-	font-size : 8px;
-	margin-top: 3px;
-}
-header {
-	margin-top: 7px;
-	border-bottom: 1px dashed gray;
-}
-.title {
-	display : inline;
-	font-size: 20px;
-}
-.row:before, .row:after {
-	content: "";
-	display : table;
-	margin: 0px;
-	padding: 0px;
-}
-.row :after {
-	clear : both;
-}
-.door{
-	background-image : url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
-	background-size: auto;
-	padding: 5px;
-	height: 220px;
-}
-.first {
-	width: 480px;
-	float: left;
-	margin: 5px 5px 20px 3px;
-	height: 500px;
-	padding-right: 5px;
-	border-right: 1px dashed gray;
-	
-}
-
-.second {
-	margin-top: 5px;
-	margin-bottom: 20px;
-	width: 235px;
-	float: left;
-	height: 500px;
-}
-
-.first-table {
-	border-top: solid 2px gray;
-	border-bottom: solid 2px gray;
-	height: 50px;
-	width: 480px;
-	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
-}
-
-.first-line {
-	width: 240px;
-	float: left;
-}
-
-.info {
-	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
-	height: 100px;
-}
-
-.join {
-	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
-	height: 100px;
-}
-
-.hello {
-	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
-	height: 100px;
-}
-
-.now {
-	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
-	height: 100px;
-}
-.notice-text{
-	text-align: left;
-	font-size: 5px;
-}
-.notice-title{
-	font-size: 22px;
-	display: inline;
-}
-.must {
-	background-image: url(https://ssl.pstatic.net/cafechat.phinf/MjAxODEwMTRfMTcy/MDAxNTM5NTE2MTE3NDI3._KBbM8adovQvWVBVzmVCVIV-Ac9zSBFS7klcLFU4aU0g.kx9YV_fujWBbyjgC9SIWdp9HdxLJIzMOvSHUBWSCfBEg.PNG.123qkwm/must.png);
-	height: 200px;
-	margin-bottom: 5px;
-}
-.must-notice-text {
-	padding-top: 95px; 
-	padding-left: 9px;
-	font-size: 7px;
-	font-weight: lighter;
-	color: whitesmoke;
-	float: left;
-}
-.important {
-	background-color: white;
-	height: 90px;
-	margin-bottom: 5px;
-}
-.important-line{
-	margin: 5px 0px 10px 0px;
-	height: 2px;
-	background-color: goldenrod;
-}
-.yellow{
-	color: goldenrod;
-}
-.important-more{
-	border: 2px goldenrod solid;
-	border-radius: 40%;
-	text-align: center;
-	color: goldenrod;
-	display: inline;
-	margin: 5px 0px 0px 30px;
-	padding: 2px 5px;
-	font-size: 10px;
-}
-.normal {
-	background-color: white;
-	height: 90px;
-	margin-bottom: 5px;
-}
-.normal-line{
-	margin: 5px 0px 10px 0px;
-	height: 2px;
-	background-color: springgreen;
-}
-.green{
-	color: springgreen;
-}
-.normal-more{
-	border: 2px springgreen solid;
-	border-radius: 40%;
-	text-align: center;
-	color: springgreen;
-	display: inline;
-	margin: 5px 0px 0px 30px;
-	padding: 2px 5px;
-	font-size: 10px;
-}
-.hashtag {
-	background-image: url(http://blogfiles.naver.net/MjAxNzExMjVfNTAg/MDAxNTExNTc3NjE3Mjc1.7NxR9x2osJ-3-6RHfQWJHSYkednK62yd0gGd9CjH34Ig.x23EDUGyw10soeJyHuK83uL7DloYfyPGIyWaC8jhCIUg.JPEG.nibey725/AKB2_20171119_204324.jpg);
-	height: 80px;
-}
-
-.third {
-	width: 500px;
-	float: left;
-	margin-left: 5px;
-	padding-left: 10px;
-	height: 490px;
-	border-bottom: 1px dashed black;
-}
-
-.fourth {
-	width: 220px;
-	float: left;
-	height: 490px;
-	border-bottom: 1px dashed black;
-}
-.bottom-ul{
-	margin-right: 10px;
-}
-.bottom-nav {
-	padding-left: 20px;
-}
-.bottom-header {
-	margin-right : 10px;
-	font-size : 15px;
-	float : right;
-	background-color: aquamarine;
-	padding: 2px;
-}
-.bottom-title {
-	display : inline;
-	font-size: 15px;
-}
-.selection {
-	padding: 2px;
-	color: aquamarine;
-	border: 2px solid aquamarine;
-	border-radius: 5px;
-}
-.video {
-	width: 490px;
-	height: 230px;
-}
-
-.second-line {
-	width: 250px;
-	float: left;
-}
-.word {
-	height: 230px;
-}
-.box {
-	background-color: aqua;
-	height: 110px;
-	margin: 10px 10px 0px 0px;
-}
-.fifth-box {
-	background-color: aqua;
-	height: 110px;
-	margin: 0px 10px 0px 0px;
-}
-.small-box {
-	background-color: aqua;
-	height: 110px;
-	margin: 10px 10px 0px 0px;
-}
-.big {
-	padding-top: 10px;
-	font-size: 25px;
-	font-weight: bold;
-}
-.small {
-	font-size: 15px;
-}
-.bold {
-	font-weight: bold;
-}
-.footer-text {
-	float: right;
-	margin-right: 20px;
-	margin-top: 10px;
-}
-.footer-logo {
-	float: left;
-	margin-left: 20px;
-	margin-top: 10px;
-	width: 150px;
-	height: 50px;
-}
-.fa-check-square{
-	margin-right: 5px;
-}
-.fa-list-ul{
-	margin-right: 5px;
-}
-	
-</style>
-</head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li class="title"><strong>UZONE</strong></li>
-				<li class="header">이용문의</li>
-				<li class="l">l</li>
-				<li class="header">CI</li>
-				<li class="l">l</li>
-				<li class="header">1:1문의</li>
-				<li class="l">l</li>
-				<li class="header">연합문의</li>
-			</ul>
-		</nav>
-	</header>
-	<div class="row first">
-		<div class="col">
-			<div class="door">
-				<p>아이즈원 480px*220px</p>
-			</div>
-		</div>
-		<div class="col first-table">480px*50px</div>
-		<div class="col">
-			<div class="row">
-				<div class="col first-line">
-					<div class="info">
-						<p>카페 이용안내 240px*100px</p>
-					</div>
-				</div>
-				<div class="col first-line">
-					<div class="join">
-						<p>가입하기 240px*100px</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col first-line">
-					<div class="hello">
-						<p>가입인사 작성 240px*100px</p>
-					</div>
-				</div>
-				<div class="col first-line">
-					<div class="now">
-						<p>지금은 ㅇㅇ시 240px*100px</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row second">
-		<div class="col">
-			<div class="must">
-				<p class="must-notice-text">필독 공지사항<br><br>필독 공지사항<br><br>필독 공지사항</p>
-			</div>
-		</div>
-		<div class="col">
-			<div class="important">
-				<p class="notice-title"><span class="yellow bold">중요</span> 공지사항</p>
-				<div class="important-more">더보기</div>
-				<div class="important-line"></div>
-				<p class="notice-text">중요 공지사항</p>
-			</div>
-		</div>
-		<div class="col">
-			<div class="normal">
-				<p class="notice-title"><span class="green bold">일반</span> 공지사항</p>
-				<div class="normal-more">더보기</div>
-				<div class="normal-line"></div>
-				<p class="notice-text">일반 공지사항</p>
-			</div>
-		</div>
-		<div class="col">
-			<div class="hashtag">
-				<p>hashtag</p>
-			</div>
-		</div>
-	</div>
-	<div class="bottom-nav">
-		<ul class="bottom-ul">
-			<li class="bottom-title selection">UZONE SELECTION</li>
-			<li class="bottom-title">NO.1</li>
-			<li class="bottom-header"><i class="fas fa-list-ul"></i>셀렉션 목록</li>
-			<li class="bottom-header"><i class="fas fa-check-square"></i>게시글 추천</li>
-		</ul>
-	</div>
-	<div class="row third">
-		<div class="col">
-			<div class="video">
-				<iframe src="https://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=974EB6B70BC45E7ED1C5285572F2E8ADBC70&outKey=V125e60422e7cb665d572528e2fcba8005b173fa6d03a63502ca8528e2fcba8005b17&controlBarMovable=true&jsCallable=true&isAutoPlay=true&skinName=tvcast_white" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" WIDTH="490px" HEIGHT="230px" allow="" allowfullscreen></iframe>
-			</div>
-		</div>
-		<div class="col">
-			<div class="row">
-				<div class="col second-line">
-					<div class="box">
-						<p class="big">first box</p>
-						<p class="small">first box<strong> bold</strong></p>
-					</div>
-				</div>
-				<div class="col second-line">
-					<div class="box">
-						<p class="big">second box</p>
-						<p class="small">second box<strong> bold</strong></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="row">
-				<div class="col second-line">
-					<div class="box">
-						<p class="big">third box</p>
-						<p class="small">third box<strong> bold</strong></p>
-					</div>
-				</div>
-				<div class="col second-line">
-					<div class="box">
-						<p class="big">fourth box</p>
-						<p class="small">fourth box<strong> bold</strong></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row fourth">
-		<div class="col">
-			<div class="fifth-box">
-				<p class="big">fifth box</p>
-				<p class="small">fifth box<strong> bold</strong></p>
-			</div>
-		</div>
-		<div class="col">
-			<div class="small-box">
-				<p class="big">sixth box</p>
-				<p class="small">sixth box<strong> bold</strong></p>
-			</div>
-		</div>
-		<div class="col">
-			<div class="small-box">
-				<p class="big">seventh box</p>
-				<p class="small">seventh box<strong> bold</strong></p>
-			</div>
-		</div>
-		<div class="col">
-			<div class="small-box">
-				<p class="big">eighth box</p>
-				<p class="small">eighth box<strong> bold</strong></p>
-			</div>
-		</div>
-	</div>
-	<footer>
-		<img src="naco4.jpeg" alt="logo" class="footer-logo">
-		<p class="footer-text">copy<br>right</p>
-	</footer>
+	<div style="margin-top: 35px; margin-left: 35px; padding: 0px; width: 740px;    border: 1px solid gray;    padding: 10px;    height: 1080px;    border-radius: 3px;    font-family: NanumGothic;">
+  <ul style="margin-top: 0px; padding-left: 10px; margin-top: 3px; padding-bottom: 5px;    border-bottom: 1px dashed gray; margin-bottom: 5px;">
+   <li style="padding: 0px; list-style: none; display : inline; font-size: 20px; color:black; text-decoration:none;"><strong><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/produce3" target="_blank">UZONE</a></strong>
+   </li><li style="padding: 0px; list-style: none; margin-right : 10px; float : right;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/ArticleList.nhn?search.clubid=29501569&amp;search.menuid=10&amp;search.boardtype=Q" target="_blank">건의사항</a></li><li style="padding: 0px; list-style: none; margin-right : 10px; float : right;  font-size : 8px; margin-top: 3px;">l</li><li style="padding: 0px; list-style: none; margin-right : 10px; float : right;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://open.kakao.com/o/sCrKjhX" target="_blank">연합문의</a></li><li style="padding: 0px; list-style: none; margin-right : 10px; float : right;  font-size : 8px; margin-top: 3px;">l</li><li style="padding: 0px; list-style: none; margin-right : 10px; float : right;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/ArticleList.nhn?search.clubid=29501569&amp;search.menuid=11&amp;search.boardtype=Q" target="_blank">질문하기</a></li><li style="padding: 0px; list-style: none; margin-right : 10px; float : right;  font-size : 8px; margin-top: 3px;">l</li><li style="padding: 0px; list-style: none; margin-right : 10px; float : right;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/produce3" target="_blank">CI</a></li></ul>
+  <div style="margin-top: 0px; padding: 0px; width: 480px;    float: left;    margin: 0px 5px 10px 3px;    height: 490px;    padding-right: 5px;    border-right: 1px dashed gray;">
+   <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px;">
+    <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/produce3/17208" target="_blank"><img id="https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTRfMjY0/MDAxNTM5NTI2ODEyNjAw.RaEJGUwoHHo2-EZ1LVdYzhxUXtBWnJDN-MfI1mx-7QMg.k6k5GwGgissotoCj-bW1wt7Bw2kmIXQH5yCUfzcsXc8g.PNG.yahappy258/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C-3.png?type=w740" src="https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTRfMjY0/MDAxNTM5NTI2ODEyNjAw.RaEJGUwoHHo2-EZ1LVdYzhxUXtBWnJDN-MfI1mx-7QMg.k6k5GwGgissotoCj-bW1wt7Bw2kmIXQH5yCUfzcsXc8g.PNG.yahappy258/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C-3.png?type=w740" width="480" height="220" style="width: 480px; height: 220px; margin-top: 0px; padding: 0px; margin-bottom: 0px;"></a>
+   </div>
+   <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px; border-top: solid 2px gray;    border-bottom: solid 3px white;    height: 50px;    width: 480px;    background-image: url(https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTVfMTc5/MDAxNTM5NTI5ODE3MDAz.VsMyflCO1tE0xKef9DoT-IwgKgNis_uWHcXHGwD-l_Ug.J35iroeU0LRWWXPPtGK7HNm1m1b0pYkg7j4PTnaTzngg.PNG.yahappy258/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C-4.png?type=w740);"></div>
+   <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px;">
+    <div>
+     <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px; width: 240px; height: 100px; float: left;">
+      <!--240px*100px-->
+      <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/ArticleList.nhn?search.clubid=29501569&amp;search.menuid=21&amp;search.boardtype=L" target="_blank"><img id="https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTVfNzYg/MDAxNTM5NTMxMDk2NTYx.Y6Hd0ZCbmag7Ttzqn4FHp2Y83jcm_sevOX5jbQT9oBgg.KBPudY65Hcc0Mnj5tHk8iZ6Nhi-VPIAeTiUx6tn2iT4g.PNG.yahappy258/11.png?type=w740" src="https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTVfNzYg/MDAxNTM5NTMxMDk2NTYx.Y6Hd0ZCbmag7Ttzqn4FHp2Y83jcm_sevOX5jbQT9oBgg.KBPudY65Hcc0Mnj5tHk8iZ6Nhi-VPIAeTiUx6tn2iT4g.PNG.yahappy258/11.png?type=w740" height="100" style="height: 100px; margin-top: 0px; padding: 0px;"></a>
+     </div>
+     <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px; width: 240px; height: 100px; float: left;">
+      <!--240px*100px-->
+      <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/ArticleList.nhn?search.clubid=29501569&amp;search.menuid=24&amp;search.boardtype=L" target="_blank"><img id="https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTVfMjk4/MDAxNTM5NTMxMDk3NTMw.I1VUOsJs0JmLZEgiZKhf4ATrcT84V4RPyUrZpWhgSZQg.FpHuiY4-mCTnO3ExuEWQWeZGx2gQ2oGUNkr9lX5gVU0g.PNG.yahappy258/13.png?type=w740" src="https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTVfMjk4/MDAxNTM5NTMxMDk3NTMw.I1VUOsJs0JmLZEgiZKhf4ATrcT84V4RPyUrZpWhgSZQg.FpHuiY4-mCTnO3ExuEWQWeZGx2gQ2oGUNkr9lX5gVU0g.PNG.yahappy258/13.png?type=w740" height="100" style="height: 100px; margin-top: 0px; padding: 0px;"></a>
+      <!--240px*100px-->
+     </div>
+    </div>
+    <div>
+     <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px; width: 240px; height: 100px; float: left;">
+      <!--240px*100px-->
+      <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/ArticleList.nhn?search.clubid=29501569&amp;search.menuid=52&amp;search.boardtype=L" target="_blank"><img id="https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTVfNDcg/MDAxNTM5NTMxMDk3MDA4.5i8gyzD0klAlNdERMQX1NsRknVVyA_U2o06vxMLYiQIg.zNT8lU4YVcFNMNJ6AKKSiiv7x0ure1J-EZg4kKCKocgg.PNG.yahappy258/12.png?type=w740" src="https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTVfNDcg/MDAxNTM5NTMxMDk3MDA4.5i8gyzD0klAlNdERMQX1NsRknVVyA_U2o06vxMLYiQIg.zNT8lU4YVcFNMNJ6AKKSiiv7x0ure1J-EZg4kKCKocgg.PNG.yahappy258/12.png?type=w740" height="100" style="height: 100px; margin-top: 0px; padding: 0px;"></a>
+     </div>
+     <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px; width: 240px; height: 100px; float: left;">
+      <!--240px*100px-->
+      <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/ArticleList.nhn?search.clubid=29501569&amp;search.menuid=94&amp;search.boardtype=L" target="_blank"><img id="https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTVfMjgx/MDAxNTM5NTMxMDk3OTIx.llFCUmCRTXn_iwe0bOfIKtg05TllbMFDoJ9Z06ghsNog.HytbAQOSSC-j3zMggKYm1ZHBBf5vbF86m8t99PZscPQg.PNG.yahappy258/14.png?type=w740" src="https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTVfMjgx/MDAxNTM5NTMxMDk3OTIx.llFCUmCRTXn_iwe0bOfIKtg05TllbMFDoJ9Z06ghsNog.HytbAQOSSC-j3zMggKYm1ZHBBf5vbF86m8t99PZscPQg.PNG.yahappy258/14.png?type=w740" height="100" style="height: 100px; margin-top: 0px; padding: 0px;"></a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div style="margin-top: 0px; padding: 0px;    margin-bottom: 10px;    width: 235px;    float: left;    height: 490px;">
+   <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px;">
+    <div style="margin-top: 0px; padding: 0px; background-image: url(https://cafeptthumb-phinf.pstatic.net/MjAxODEwMTVfMTk0/MDAxNTM5NTI5ODE3NTI3.Z7LT84p3ojrZpkxk9baN61KFCpaOb88hRp10-LP6QVkg.5Oa9ZdBdm-5OSvW85IaLvcRKZaVidU_B9rhNUrvAK3cg.PNG.yahappy258/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C-5.png?type=w740);  height: 200px; margin-bottom: 5px;">
+     <p style="margin-top: 0px; padding: 0px; padding-top: 95px;  padding-left: 9px; font-size: 15px; font-weight: lighter; color: whitesmoke; float: left;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color: white" href="https://cafe.naver.com/produce3/44605" target="_blank">- 카페  ReBoot Project</a><br><br><a style="margin-top: 0px; padding: 0px; text-decoration:none; color: white" href="https://cafe.naver.com/produce3/14842" target="_blank">- UZONE 카페 소개</a><br><br><a style="margin-top: 0px; padding: 0px; text-decoration:none; color: white" href="https://cafe.naver.com/produce3/6163" target="_blank">- 카페 게임 정리</a></p>
+    </div>
+   </div>
+   <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px;">
+    <div style="margin-top: 0px; padding: 0px; background-color: white; height: 90px;  margin-bottom: 5px;">
+     <p style="padding: 0px; margin-left: 5px; font-size: 22px; display: inline; color:black; color: #035d5a;"><span style="margin-top: 0px; padding: 0px; font-weight: bold;">필독</span>
+      공지사항</p>
+     <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/produce3/15859" target="_blank">
+      </a><p style="padding: 0px; border: 2px #035d5a solid; border-radius: 8%; text-align: center; color: #035d5a; display: inline; margin: 0px 0px 15px 30px; padding: 2px 5px; font-size: 10px;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/produce3/53063" target="_blank">더보기</a></p>
+     <div style="margin-top: 0px; padding: 0px; margin: 5px 0px 10px 0px; height: 2px; background-color: #035d5a;"></div>
+     <p style="margin-top: 0px; padding: 0px; margin-left: 5px; text-align: left; font-size: 15px;  color:black;">-
+      UZONE 제2기 정식스텝 선발</p>
+    </div>
+   </div>
+   <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px;">
+    <div style="margin-top: 0px; padding: 0px; background-color: white;   height: 90px;   margin-bottom: 5px;">
+     <p style="padding: 0px; margin-left: 5px; font-size: 22px; display: inline; color:black; color: #03aba5;"><span style="margin-top: 0px; padding: 0px; font-weight: bold;">아이즈원</span>
+      공지</p>
+     <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/produce3/18168" target="_blank">
+      </a><p style="padding: 0px; border: 2px #03aba5 solid; border-radius: 8%; text-align: center; color: #03aba5; display: inline; margin: 10px 0px 15px 30px; padding: 2px 5px; font-size: 10px;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="http://iz-one.co.kr/notice/iz-one-japan-debut-single-and-showcase/" target="_blank">더보기</a></p>
+     <div style="margin-top: 0px; padding: 0px; margin: 5px 0px 8px 0px; height: 2px; background-color: #03aba5;"></div>
+     <p style="margin-top: 0px; padding: 0px; margin-left: 5px; text-align: left; font-size: 15px;  color:black;">-
+      IZ*ONE 일본 데뷔 싱글 안내</p>
+    </div>
+   </div>
+   <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px;">
+    <div style="margin-top: 0px; padding: 0px; color: #02c1ba;">
+     <p style="padding: 0px; margin-left: 5px; font-size: 22px; display: inline; color:black; color: #03aba5;"><span style="margin-top: 0px; padding: 0px; font-weight: bold;">서포터즈</span>
+      공지</p>
+     <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/produce3/17208" target="_blank">
+      </a><p style="padding: 0px; border: 2px #03aba5 solid; border-radius: 8%; text-align: center; color: #03aba5; display: inline; margin: 10px 0px 15px 30px; padding: 2px 5px; font-size: 10px;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:black;" href="https://cafe.naver.com/produce3/52128" target="_blank">더보기</a></p>
+     <div style="margin-top: 0px; padding: 0px; margin: 5px 0px 8px 0px; height: 2px; background-color: #03aba5;"></div>
+     <p style="margin-top: 0px; padding: 0px; margin-left: 5px; text-align: left; font-size: 12px;  color:black;">-
+      UZONE 공식 서포터즈 꽃구름 가입하기</p>
+    </div>
+   </div>
+  </div>
+  <div style="margin-top: 0px; padding: 0px; width: 740px;   border-top: 1px dashed gray;   margin-top: 510px;"></div>
+  <div style="background-color:pink; margin-top: 0px; padding: 0px; width: 720px;   float: left;   padding-left: 10px;   padding-right: 10px;   height: 240px;">
+   <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px;">
+    <div style="margin-top: 0px; padding: 0px; width: 480px; height: 230px; margin-top: 10px; float: left;">
+     <iframe src="https://www.youtube.com/embed/xhdW-GceM6g?wmode=opaque" width="480px" height="230px" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+    </div>
+   </div>
+   <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px;">
+    <div>
+     <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px; width: 230px; margin-left: 10px; float: left;">
+      <div style="margin-top: 0px; padding: 0px; background-color: #E9016A; width: 230px; height: 110px; margin: 10px 10px 0px 0px;">
+       <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/42910" target="_blank">
+        </a><p style="margin-top: 0px; padding: 0px; margin-left: 5px; padding-top: 19px; font-size: 20px; font-weight: bold;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/42910" target="_blank">8월의기억
+         연합카페 안내</a></p><p style="margin-top: 0px; padding: 0px; margin-left: 5px; font-size: 13px;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/42910" target="_blank"><strong>아이즈원 팬카페 연합 8월의기억</strong><br>보러가기</a></p>
+      </div>
+     </div>
+     <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px; width: 230px; margin-left: 10px; float: left;">
+      <div style="margin-top: 0px; padding: 0px; background-color: #E9016A; width: 230px; height: 110px; margin: 10px 10px 0px 0px;">
+       <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/52025" target="_blank">
+        </a><p style="margin-top: 0px; padding: 0px; margin-left: 5px; padding-top: 19px; font-size: 20px; font-weight: bold;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/52025" target="_blank">UZONE 열활즈원 내꺼야!</a></p><p style="margin-top: 0px; padding: 0px; margin-left: 5px; font-size: 13px;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/52025" target="_blank"><strong>열심히 활동하고 상품 받아가기</strong><br>열활
+         부탁드려요!</a></p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div style="background-color:pink; margin-top: 0px; padding: 0px; width: 230px;   float: left;   height: 250px;   padding-left: 10px;   border-bottom: 1px dashed gray;">
+   <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px;">
+    <div class="row">
+     <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px;">
+      <div style="margin-top: 0px; padding: 0px; background-color: #E9016A;   height: 110px;   margin: 10px 10px 0px 0px;   width: 230px;">
+       <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/17967" target="_blank">
+        </a><p style="margin-top: 0px; padding: 0px; margin-left: 5px; padding-top: 19px; font-size: 20px; font-weight: bold;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/45448" target="_blank">UZONE 2019<br>1분기 사전서포트</a></p><p style="margin-top: 0px; padding: 0px; margin-left: 5px; font-size: 13px;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/45448" target="_blank"><strong>아이즈원 멤버들에게</strong><br>힘이 되어주세요!</a></p>
+      </div>
+     </div>
+     <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px;">
+      <div style="margin-top: 0px; padding: 0px; background-color: #E9016A;   height: 110px;   margin: 10px 10px 0px 0px;   width: 230px;">
+       <a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/9981" target="_blank">
+        </a><p style="margin-top: 0px; padding: 0px; margin-left: 5px; padding-top: 19px; font-size: 20px; font-weight: bold;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/9981" target="_blank">아이즈원
+         악플 신고 안내</a></p><p style="margin-top: 0px; padding: 0px; margin-left: 5px; font-size: 13px;"><a style="margin-top: 0px; padding: 0px; text-decoration:none; color:white;" href="https://cafe.naver.com/produce3/9981" target="_blank"><strong>맴버들이 보기전에 빨리 신고해주세요!</strong><br>신고한
+         악플은
+         소속사로 전달됩니다!</a></p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div style="background-color:pink; margin-top: 0px; padding: 0px; padding-right: 10px;   width: 490px;   float: left;   height: 250px;   border-bottom: 1px dashed gray;">
+   <div style="margin-top: 0px; padding: 0px; margin: 0px; padding : 0px; margin-left: 10px;   margin-top: 10px;">
+    <iframe src="https://www.youtube.com/embed/hpOZ-ge2lFA?wmode=opaque" width="480px" height="230px" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+   </div>
+  </div>
+
+
+  <div>
+   <p style="float: right; margin-top: 10px; margin-right: 20px;">Copyright 2019 롯데핏츠 All Right
+    Reserved</p>
+  </div>
+ </div>
 </body>
 </html>
